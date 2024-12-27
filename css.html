@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="html.css">
+    <link rel="icon" href="IMG_Copy.PNG" type="image/x-icon">
+    <title>CSS</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css" integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <div class="loader loader--hidden"></div>
+    <div class="div1">
+        <img src="kat-LogoMakr.png" alt=""><br>
+
+    </div>
+    <h1 style="text-align: center; font-family: Arial, Helvetica, sans-serif;; background-image: linear-gradient(360deg, #fbff00 3%, #ff006a 50%, rgb(0, 38, 255) 100%); -webkit-background-clip: text; color: transparent;">Learn css</h1><br>
+    <div>
+         <div>
+            <p class="p">Welcome to CSS learn page, this site will help you to understand CSS and the syntax that you will use to write CSS. At the end of this lesson, you will be able to style a website by adding a background image,colors, and other decoration that you will learn
+                to decorate your website.
+            </p>
+            <p class="p"><strong>CSS</strong> in full: <strong style="text-align: center; font-family: Arial, Helvetica, sans-serif;;background-image: linear-gradient(360deg, #fff 3%, #ff603a 50%, rgb(0, 0, 255) 100%); -webkit-background-clip: text; color: transparent;">Cascading Style Sheet</strong></p>
+        </div>
+        <div class="list">
+            <ul>
+                <li class="li">
+                    <p class="pos">Basic CSS rule structure:</p>
+                    <ul>
+                       <p>selector &lbrace; <br>
+                    property: value; <br>&rbrace;</p>
+                    </ul>
+                </li>
+                <li class="li">
+                    <ul>
+                        <p class="pos">CSS syntax:</p>
+                        <li>selector &rarr; h1<strong>- h1 is an example of a selector</strong></li>
+                        <li>declaration &rarr; &lbrace;color:red; font-size:10px; &rbrace;</li>
+                        <li>property &rarr; color &amp; font-size</li>
+                        <li>value &rarr; red &amp; 10px</li>
+                    </ul>
+                </li>
+                <li class="li">
+                    <ul>
+                        <p class="pos">CSS selectors: </p>
+                        <li>css element selector <br>
+                    p &lbrace; <br>
+                color: red; <br>&rbrace;</li><br>
+                        <li>css id selector <br>
+                    #para &lbrace; <br>
+                color: red; <br>&rbrace;</li><br>
+                        <li>css class selector <br>
+                    .title &lbrace; <br>
+                color: green; <br>&rbrace;</li><br>
+                        <li>css universal selector <br>
+                        *body &lbrace;<br>
+                    font-family: monospace; <br>&rbrace;</li>
+                    </ul>
+                </li>
+                <li class="li">
+                    <ul>
+                        <p class="pos">how to add css:</p>
+                        <li>external css &rarr; &lt;link rel="stylesheet" href="name of your css file" &gt; </li><br>
+                        <li>internal css: <br>
+                    &lt;head&gt; <br>
+                    &lt;style&gt; <br>
+                        body&lbrace; <br> background-color: #333; <br> &rbrace; <br>
+                    .container&lbrace; <br> display: flex; <br> &rbrace; <br>
+                    &lt;/style&gt; <br> &lt;/head&gt; <br>        </li><br>
+                        <li>inline css &rarr; &lt;h1 style="color:red;" &gt; paragraph &lt;/h1&gt;</li>
+                    </ul>
+                </li>
+                <li class="li">
+                    <ul>
+                        <p class="pos">CSS comments:</p>
+                        <li>/*comment here*/</li>
+                    </ul>
+                </li>
+                <li class="li">
+                    <ul>
+                        <p class="pos">CSS background:</p>
+                        <li>CSS background color:<br> <br>
+                            div&lbrace; <br>
+                            background-color: blue; <br>
+                            opacity: 0.3; /*this will give the opacity of 30%*/<br>&rbrace;</li><br>
+                        <li>CSS background image: <br> <br>
+                            body&lbrace; <br>
+                            background-image: url(image.jpg); /*can be jpg,png,etc*/ <br>
+                            background-repeat: none; /*this depends on what you want not always none*/ <br>
+                            background-attachment: fixed; /*also depends if fixed or scroll*/ <br>
+                            &rbrace;</li>
+                        <li></li>
+                             
+                    </ul>
+                </li>
+                <li class="li">
+                    <ul>
+                        <p class="pos">CSS margins:</p> 
+                        <p>css has properties for specifying margin of each side of an element such as:</p> <br>
+                        <li>margin-left, margin-right, margin-top, margin-bottom</li><br>
+                        <p>all the margin property have the following values:</p>
+                        <li>auto &rarr; <strong>for this the browser calculates the margin.</strong></li>
+                        <li>lenght &rarr; <strong>this specifies margin in px, pt, cm, etc.</strong></li>
+                        <li>% &rarr; <strong>specifies a margin in % of the width of the containing element.</strong></li>
+                        <li>inherit &rarr; <strong>specifies that the margin should be inherited from the parent element.</strong></li>
+                        <p><strong>Tip:</strong>negative values can be used.</p>
+                    </ul>
+                </li>
+                <li class="li">
+                    <ul>
+                        <p class="pos">CSS padding</p>
+                        <p>CSS has a property for specifying padding of each side of an element:</p>
+                        <li>&rarr; padding-right, padding-left, padding-top, padding-bottom.</li>
+                        <p>All the padding property have the following values:</p>
+                        <li>length &rarr; <strong>this specifies padding in px, pt, cm, etc.</strong></li>
+                        <li>% &rarr; <strong>specifies padding in % of the width of the containing element.</strong></li>
+                        <li>inherit &rarr; <strong>specifies that the padding should be inherited from the parent element.</strong></li>
+                        <p>example:</p>
+                        <li>div &lbrace; <br>
+                             margin-top: 10px; <br>
+                             margin-bottom: 5px; <br>
+                             margin-left: 15px; <br>
+                             margin-right: 20px; <br>&rbrace;</li>
+                    </ul>
+                </li>
+                <li class="li">
+                    <ul>
+                        <p class="pos">CSS Height/Width:</p>
+                        <p>The height and width properties may have the following values:</p>
+                        <li>auto &rarr;<strong>The browser calculates the height and width</strong></li>
+                        <li>initial &rarr;<strong> Sets the height/width to its default value</strong></li>
+                        <li>% &rarr;<strong>Defines the height/width in percent of the containing block.</strong></li>
+                        <li>inherit &rarr;<strong>The height/width will be inherited from its parent value</strong></li>
+                        <li>length &rarr;<strong>Defines the height/width in px, cm, etc.</strong></li>
+                        <p>for example:</p>
+                        <li>div&lbrace; <br>
+                            width: 200px; <br>
+                            height: 90vh; <br>
+                            background-color: blue; <br>&rbrace;</li>
+                    </ul>
+                </li>
+                <li class="li">
+                    <ul>
+                        <p class="pos">CSS Rounded Corners:</p>
+                        <li><strong>One value - border-radius: 15px;</strong>&rarr;the value applies to all four corners, which are rounded equally.</li><br>
+                        <li><strong>Two values - border-radius: 15px 50px;</strong>&rarr;first value applies to top-left and bottom-right corners, and the <br>second value applies to top-right and bottom-left corners.</li><br>
+                        <li><strong>Three values - border-radius: 15px 50px 30px;</strong>&rarr;first value applies to top-left corner, second value applies <br>to top-right and bottom-left corners, and third value applies to bottom-right corner</li><br>
+                        <li><strong>Four values - border-radius: 15px 50px 30px 5px;</strong>&rarr;first value applies to top-left corner, second value <br>applies to top-right corner, third value applies to bottom-right corner, and fourth value applies to bottom-left corner</li>
+                    </ul>
+                </li>
+                <li class="li">
+                    <ul>
+                        <p class="pos">CSS grid:</p>
+                        <p>some examples</p>
+                        <li>.grid-container&lbrace; <br><br>
+                               display: grid; <br>
+                               column-gap: 20px; <br>
+                               row-gap: 10px; <br> <br>
+                               /*short hand*/ <br><br>
+                               gap: 20px 10px;<br><br>&rbrace;</li><br>
+                        <p><strong>grid-template-columns</strong> property defines the number of columns <br> in your grid layout, and it can define the width of each column.</p>
+                        <p><strong>grid-template-rows</strong> property defines the height of each row.</p>
+                    </ul>
+                </li>
+                <li class="li">
+                    <ul>
+                        <p class="pos">CSS Animation:</p>
+                        <p>/*the animation code*/</p>
+                        <li>@keyframes example&lbrace; <br> 
+                             from&lbrace;background-color: black;&rbrace; <br>
+                             to&lbrace;background-color: white;&rbrace; <br>&rbrace;</li>
+                        <p>/*the element to apply the animation to*/</p>
+                        <li>div&lbrace; <br>
+                            width: 50px; <br>
+                            height: 50px; <br>
+                            background-color: red; <br>
+                            animation-name: example; <br>
+                            animation-duration: 5s; <br>&rbrace;</li>
+                        <p>/*multiple changes*/</p>
+                        <li>@keyframes example&lbrace; <br>
+                             0% &lbrace;background-color: pupple;&rbrace; <br>
+                             25% &lbrace;background-color: black;&rbrace;<br>
+                             50% &lbrace;background-color: blue;&rbrace; <br>
+                             100% &lbrace;background-color: red;&rbrace; <br>&rbrace; </li>
+                        <p>/*the element to apply the animation to*/</p>
+                        <li>div&lbrace; <br>
+                            width: 50px; <br>
+                            height: 50px; <br>
+                            background-color: red; <br>
+                            animation-name: example; <br>
+                            animation-duration: 5s; <br>&rbrace;</li>
+                        <p><strong>Tip:</strong>you can also use this properties below.</p>
+                        <li>&rarr;animation-delay</li>
+                        <li>&rarr;animation-iteration-count</li>
+                        <li>&rarr;animation-direction</li>
+                        <li>&rarr;animation-timing-function</li>
+                        <li>&rarr;animation-fill-mode</li>
+                    </ul>
+                </li>
+                <li class="li">
+                    <ul>
+                        <p class="pos">CSS gradients:</p>
+                        <p>/*css linear gradient*/</p>
+                        <li>background-image: linear-gradient(direction, color1, color2, ...);</li>
+                        <p>example:</p> 
+                        <li>#grad&lbrace; <br>
+                            background-image: linear-gradient(right, red, yellow); <br>&rbrace;</li>
+                        <p>/*css Radial gradient*/</p>
+                        <li>background-image: radial-gradient(shape size at position, start-color, ..., last-color);</li>
+                        <p>example:</p>
+                        <li>#grad&lbrace; <br>
+                            background-image: radial-gradient(red 15%, yellow 5%, green 40%); <br>&rbrace;</li>
+                        <p>/*css conic gradient*/</p>
+                        <li>background-image: conic-gradient([from angle] [at position,] color [degree], color [degree], ...);</li>
+                        <p>example:</p>
+                        <li>#grad&lbrace; <br>
+                        background-image: conic-gradient(red, yellow, green); <br>&rbrace;</li>
+                     
+                    </ul>
+                </li>
+                <li class="li">
+                    <ul>
+                        <p class="pos">CSS units</p>
+                        <p>absolute units:</p>
+                        <li><strong>cm</strong>&rarr;centimeters</li>
+                        <li><strong>mm</strong>&rarr;millimeters</li>
+                        <li><strong>px</strong>&rarr;pixels (1px = 1/96th of 1in)</li>
+                        <li><strong>in</strong>&rarr;inches (1in = 96px = 2.54cm)</li>
+                        <li><strong>pc</strong>&rarr;picas (1pc = 12 pt)</li>
+                        <li><strong>pt</strong>&rarr;points (1pt = 1/72 of 1in)</li>
+                        <p>relative units:</p>
+                        <li><strong>em</strong>&rarr;Relative to the font-size <br>
+                                    of the element (2em means 2 <br>
+                                   times the size of the current font)</li>
+                        <li><strong>vh</strong>&rarr;Relative to 1% of the height of <br> the viewport*</li>
+                        <li><strong>vmax</strong>&rarr;Relative to 1% of viewport's* <br>larger dimension</li>
+                        <li><strong>vw</strong>&rarr;Relative to 1% of the width of the <br>viewport*</li>
+                        <li><strong>rem</strong>&rarr;Relative to font-size of the root <br> element</li>
+                        <li><strong>%</strong>&rarr;Relative to the parent element</li>
+                        <li><strong>ex</strong>&rarr;Relative to the x-height of the <br>current font (rarely used)</li>
+                        <li><strong>ch</strong>&rarr;Relative to width of the "0" (zero)</li>
+                    </ul>
+                </li>
+                
+            </ul>
+            <div>
+                <p class="p">If you want the <strong>book of css</strong>, is available here and you can download it. Click the button: 
+                <a style="color: rgb(60, 255, 0);" href="book_shelf.html"><button type="button" style="border-radius: 15px 5px 15px; background-image: linear-gradient(90deg, rgb(9, 255, 0), rgb(38, 0, 255) 30%, rgb(128, 0, 117) 95%); color: rgb(0, 255, 85);">BOOK OF CSS</button></a></p>
+            </div>
+        </div>
+    
+    </div>
+
+    <footer>
+        <div>
+            <div class="row">
+                <div class="footer-col">
+                    <h4>Contact us</h4>
+                    <ul class="link">
+                      <li><a class="a" href="#">+250 792575986</a></li>
+                      <li><a class="a" href="#">+250 787998255</a></li>
+                      <li><a class="a" href="#">+250 738609893</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                  <h4>Adress</h4>
+                  <ul class="link">
+                      <li><a class="a" href="#">East Africa</a></li>
+                      <li><a class="a" href="#">Kigali/Rwanda</a></li>
+                  </ul>
+              </div>
+              <div class="footer-col">
+                  <h4>About</h4>
+                  <ul class="link">
+                      <li><a class="a" href="#">This website is for begginers who wants to study programming languages.</a></li>
+                      <li><a class="a" href="#">This website was created by the team of arsprogrammers.</a></li>
+                  </ul>
+              </div>
+              <div class="footer-col">
+                  <h4>Follow us</h4>
+                  <div class="social-links">
+                      <ul class="links">
+                          <li class="link1"><a class="alink1" href="#"><i class="fab fa-facebook-f"></i></a></li>
+                          <li class="link2"><a class="alink2" href="#"><i class="fab fa-instagram"></i></a></li>
+                          <li class="link3"><a class="alink3" href="#"><i class="fab fa-twitter"></i></a></li>
+                          <li class="link3"><a class="alink3" href="#"><i class="fab fa-lock"></i></a></li>
+                      </ul>
+                  </div>
+              </div>
+          </div>
+      </div>
+   </footer>
+   <img class="logo" src="IMG_Copy.PNG" alt="">
+   <h6>&copy;2024 KAT-PROGRAMMERS FROM ARS</h6>
+
+</body>
+</html>

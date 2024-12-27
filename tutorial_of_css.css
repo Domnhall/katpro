@@ -1,0 +1,244 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    transition: background-color 0.3s ease;
+    background-color: #000;
+}
+
+.div1{
+    text-align: center;
+    background-image: url('Cyberattaque contre le ministère des Affaires étrangères _ lAllemagne accuse la Russie.jpg');
+    color: wheat;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 350px;
+    height: 3cm;
+    background-color: #fff;
+}
+.div1 nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+.div1 nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+.div1 nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+
+body.dark {
+    background-color: black;
+    color: white;
+}
+
+.container {
+    max-width: 800px;
+    margin: 20px auto;
+    display: flex;
+    gap: 3px;
+}
+
+.video-player {
+    width: 100%;
+    height: 400px;
+    background-color: #000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+    box-shadow: 0px 1px 10px #fff;
+    margin-left: -100px;
+}
+
+.video-player iframe {
+    width: 600px;
+    height: 100%;
+    
+}
+
+.video-links {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 20px;
+    li{
+        width: 500px;
+        border-radius: 10px;
+    }
+    .dtl{
+        color: #fff;
+    }
+}
+
+.video-links li {
+    cursor: pointer;
+    padding: 10px;
+    background-color: #fff;
+    transition: box-shadow 0.3s ease;
+    box-shadow: 0px 1px 2px #1ee939;
+}
+
+.video-links li:hover {
+    box-shadow: 0 4px 8px #56c1ff;
+}
+
+.video-links li.active {
+    box-shadow: 0 4px 15px #fff;
+}
+
+
+.logo{
+    height: 1.5cm;
+    width: 1.5cm;
+    margin-left: 48%;
+    margin-right: 0;
+    margin-top: 20px;
+}
+
+img{
+    height: 1cm;
+    width: 6cm;
+    background-color: rgb(255, 255, 255);
+    margin-top: 2%;
+    border-radius: 10px;
+}
+
+.footer-col h4{
+    font-size: 18px;
+    color: #ffffff;
+    text-transform: capitalize;
+    margin-bottom: 30px;
+    font-weight: 500;
+    position: relative;
+}
+.footer-col h4::before{
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    background-color: #1ee939;
+    height: 2px;
+    box-sizing: border-box;
+    width: 50px;
+}
+.footer-col ul li:not(:last-child){
+    margin-bottom: 10px;
+   
+}
+
+
+.footer-col ul li .a{
+    color: grey;
+    font-size: 16px;
+    text-transform: capitalize;
+    text-decoration: none;
+    font-weight: 300;
+    display: block;
+    transition: all 0.3s ease;
+    margin-left: -40px;
+}
+.footer-col ul li .a:hover{
+    color: rgb(255, 255, 255);
+    padding-left: 2px;
+    padding-right: 2px;
+    padding-top: 2px;
+    padding-bottom: 2px;
+}
+.footer-col .social-links a{
+    display: inline-block;
+    height: 40px;
+    width: 40px;
+    background-color: rgba(0, 0, 0, 0.2);
+    margin: 0 20px 20px 0;
+    text-align: center;
+    line-height: 40px;
+    border-radius: 50%;
+    
+    transition: all 0.5s ease;
+}
+.links{
+    display: -webkit-inline-flex;
+    margin-left: -15%;
+}
+.footer-col .social-links .alink1:hover{
+    
+    background-color: #1900ff;
+}
+
+.footer-col .social-links .alink2:hover{
+    
+    background-color: #ff0095;
+}
+
+.footer-col .social-links .alink3:hover{
+    
+    background-color: #0099ff;
+}
+
+.alink1{
+    color: blue;
+    
+}
+.alink1:hover{
+    color: rgb(255, 255, 255);
+    padding-left: 2px;
+    padding-right: 2px;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    transition: all 0.5s ease;
+}
+
+.alink2{
+    color: rgb(255, 0, 157);
+}
+.alink2:hover{
+    color: rgb(255, 255, 255);
+    padding-left: 2px;
+    padding-right: 2px;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    transition: all 0.5s ease;
+}
+
+.alink3{
+    color: rgb(0, 183, 255);
+}
+.alink3:hover{
+    color: rgb(255, 255, 255);
+    padding-left: 2px;
+    padding-right: 2px;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    transition: all 0.5s ease;
+}
+
+
+.row{
+    display: flex;
+    flex-wrap: wrap;
+}
+ul{
+    list-style: none;
+}
+.footer-col{
+    width: 22%;
+    padding: 0 15px;
+}
+footer{
+    margin-top: 2%;
+    border-top: dotted;
+    border-top-color: rgb(163, 163, 163);
+    border-radius: 40px;
+}
+h6{
+    text-align: center;
+    color: rgb(207, 212, 207);
+    margin-bottom: 0%;
+}

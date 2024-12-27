@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="about.css">
+    <link rel="icon" href="IMG_Copy.PNG" type="image/x-icon">
+    <title>About</title>
+    <script>
+        function handleSearch(event) {
+            event.preventDefault();
+
+            const searchInput = document.getElementById('search').value.toLowerCase();
+            
+            const pageMap = {
+                'html': 'html.html',
+                'css': 'css.html',
+                'javascript': 'javascript.html',
+                'mysql': 'Mysql.html',
+                'c++': 'c++.html',
+                'python': 'python.html',
+                'tutorial of html': 'tutorial of html.html',
+                'video of html': 'tutorial of html.html',
+                'tutorial of css': 'tutorial of css.html',
+                'tutorial of mysql': 'tutorial of css.html',
+                'tutorial of javascript': 'tutorial of css.html',
+                'tutorial of c++': 'tutorial of css.html',
+                'tutorial of python': 'tutorial of css.html'
+            };
+
+            if (pageMap[searchInput]) {
+                window.location.href = pageMap[searchInput]; 
+            } else {
+                alert('No matching with your search'); 
+            }
+        }
+    </script>
+</head>
+<body>
+    <div class="loader loader--hidden"></div>
+    <div class="div1">
+        <img src="kat-LogoMakr.png" alt=""><br>
+
+    </div>
+    
+    <header>
+        <button class="nav-toggle" onclick="toggleNav()">Option</button>
+        <nav>
+          <ul>
+              <li><a href="homepage.html" style="font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; color: aliceblue;"><button class="button">Home</button></a></li>
+              <li><a href="book_shelf.html" style="font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; color: aliceblue;"><button class="button">Books</button></a></li>
+              <li><a href="tutorial.html" style="font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; color: aliceblue;"><button class="button">Tutorials</button></a></li>
+              <li><a href="app_store.html" style="font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; color: aliceblue;"><button class="button">App store</button></a></li>
+              <li><a href="about.html" style="font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; color: aliceblue;"><button class="button">About</button></a></li>
+          </ul>
+        </nav>
+              <form onsubmit="handleSearch(event)">
+                  <label for="search">Search:</label>
+                  <input class="search" style="width: 100px; height: 0.7cm; border-top-left-radius: 10px; border-bottom-left-radius: 10px; background-color: rgb(0, 0, 0); color: white; border-color: blue;" type="search" id="search" name="search" list="search-options" placeholder="Type here to Search...">
+                  <datalist id="search-options">
+                      <option value="html">
+                      <option value="css">
+                      <option value="javascript">
+                      <option value="mysql">
+                      <option value="tutorial of html">
+                      <option value="tutorial of css">
+                      <option value="tutorial of mysql">
+                      <option value="tutorial of javascript">
+                      <option value="tutorial of cpp">
+                      <option value="tutorial of python">
+                      <option value="tutorial of c++">                
+                  </datalist>
+                  <input class="bsearch" style="height: 0.7cm; margin-left: -0.1cm; border-top-right-radius: 10px; border-bottom-right-radius: 10px; border-color: rgb(47, 197, 60); background-color: black; color: aliceblue;" type="submit" value="Search">
+              </form>
+          
+      </header>
+
+    <h1 class="abt">About Us</h1>
+    <div class="about-container" id="home">
+        <!-- Developer 1 -->
+        <div class="profile">
+            <img src="donny.jpg" alt="Developer 1">
+            <h2>Donald Grayson Kagusa</h2>
+            <p><strong>Address:</strong> Kigali,Gasabo ,Gakinjiro </p>
+            <p><strong>Abilities:</strong></p>
+            <ul>
+                <li>Frontend Development (HTML, CSS, JavaScript)</li>
+                <li>Backend Development (Node.js, PHP)</li>
+                <li>Database Management (MySQL, MongoDB)</li>
+                
+            </ul>
+        </div>
+
+        <!-- Developer 2 -->
+        <div class="profile">
+            <img src="arsene.jpg" alt="Developer 2">
+            <h2>Kwizera Arsene</h2>
+            <p><strong>Address:</strong>Kigali,Gasabo ,Gacuriro </p>
+            <p><strong>Abilities:</strong></p>
+            <ul>
+                <li>Frontend Development (HTML, CSS, JavaScript)</li>
+                <li>Responsive Design</li>
+                <li>React and Angular</li>
+            </ul>
+        </div>
+    </div>
+
+   
+    <footer>
+        <div>
+            <div class="row">
+                <div class="footer-col">
+                    <h4>Contact us</h4>
+                    <ul class="link">
+                      <li><a class="a" href="#">+250 792575986</a></li>
+                      <li><a class="a" href="#">+250 787998255</a></li>
+                      <li><a class="a" href="#">+250 738609893</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                  <h4>Adress</h4>
+                  <ul class="link">
+                      <li><a class="a" href="#">East Africa</a></li>
+                      <li><a class="a" href="#">Kigali/Rwanda</a></li>
+                  </ul>
+              </div>
+              <div class="footer-col">
+                  <h4>About</h4>
+                  <ul class="link">
+                      <li><a class="a" href="#home">Our Services</a></li>
+                  </ul>
+              </div>
+              <div class="footer-col">
+                  <h4>Follow us</h4>
+                  <div class="social-links">
+                      <ul class="links">
+                          <li class="link1"><a class="alink1" href="#"><i class="fab fa-facebook-f"></i></a></li>
+                          <li class="link2"><a class="alink2" href="#"><i class="fab fa-instagram"></i></a></li>
+                          <li class="link3"><a class="alink3" href="#"><i class="fab fa-twitter"></i></a></li>
+                          <li class="link3"><a class="alink3" href="#"><i class="fab fa-lock"></i></a></li>
+                      </ul>
+                  </div>
+              </div>
+          </div>
+      </div>
+   </footer>
+
+   <script>
+    // JavaScript for navigation toggle
+    function toggleNav() {
+           const nav = document.getElementById("nav");
+           nav.classList.toggle("show");
+       }
+  </script>
+
+   <img class="logo" src="IMG_Copy.PNG" alt="">
+   <h6>&copy;2024 KAT-PROGRAMMERS</h6>
+
+</body>
+</html>

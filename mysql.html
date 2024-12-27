@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="html.css">
+    <link rel="icon" href="IMG_Copy.PNG" type="image/x-icon">
+    <title>MYSQL</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css" integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ==" crossorigin="anonymous" referrerpolicy="no-refer
+</head>
+<body>
+    <div class="loader loader--hidden"></div>
+    <div class="div1">
+        <img src="kat-LogoMakr.png" alt=""><br>
+
+    </div>
+    <h1 style="text-align: center; font-family: Arial, Helvetica, sans-serif;; background-image: linear-gradient(360deg, #fbff00 3%, #ff006a 50%, rgb(0, 38, 255) 100%); -webkit-background-clip: text; color: transparent;">Learn MYSQL</h1><br>
+    <div>
+       <div>
+            <p class="p"><strong>What is MySQL?</strong><br>
+            MySQL is a widely used open-source relational database management system (RDBMS). It helps in managing and organizing data in a structured way using tables.
+            </p>
+            <p class="p"><strong>SQL</strong> in full: <strong>Structural Query Language</strong></p>
+        </div>
+        <div class="list">
+            <ul>
+            <li class="li">
+                    <ul>
+                        <p class="pos">MOST Important SQL commands</p>
+                        <li><strong>SELECT</strong>&rarr; extracts data from a database</li>
+                        <li><strong>UPDATE</strong>&rarr;updates data in a database</li>
+                        <li><strong>DELETE</strong>&rarr; deletes data from a database</li>
+                        <li><strong>INSERT INTO</strong>&rarr;inserts new data into a database</li>
+                        <li><strong>CREATE DATABASE</strong>&rarr; creates a new database</li>
+                        <li><strong>CREATE INDEX</strong>&rarr;creates an index (search key)</li>
+                        <li><strong>DROP INDEX</strong>&rarr;deletes an index</li>
+                        <li><strong>ALTER TABLE</strong>&rarr;modifies a table</li>
+                        <li><strong>DROP TABLE</strong>&rarr; deletes a table</li>
+                        <li><strong>ALTER DATABASE</strong>&rarr;modifies a database</li>
+                        <li><strong>CREATE TABLE</strong>&rarr;creates a new table</li>
+                    </ul>
+            </li> 
+            <p class="pos">Basic MYSQL Operations</p>
+            <li class="li">
+                    <ul>
+                        <p>Creating a Database:</p>
+                        <li><strong>CREATE</strong> DATABASE my_database;</li>
+                        <li></li>
+                    </ul>
+            </li>
+            <li class="li">
+                    <ul>
+                        <p>Selecting a Database:</p>
+                        <li><strong></strong>USE my_database;</li>
+                        <li></li>
+                    </ul>
+            </li>
+            <li class="li">
+                    <ul>
+                        <p>Creating a Table:</p>
+                        <li><strong>CREATE TABLE</strong> workers( <br>
+                                    id INT AUTO_INCREMENT PRIMARY KEY, <br>
+                                    name VARCHAR(255),<br>
+                                    position VARCHAR(255),<br>
+                                    hire_date DATE <br>);</li>
+                        <li></li>
+                    </ul>
+            </li>
+            <li class="li">
+                    <ul>
+                        <p>Inserting Data:</p>
+                        <li><strong>INSERT INTO</strong> workers (name, position, hire_date) <br>
+                            <strong>VALUES</strong> ('Joe Bide', 'Software Engineer', '2004-08-13');</li>
+                        <li></li>
+                    </ul>
+            </li>
+            <li class="li">
+                    <ul>
+                        <p>Querying Data:</p>
+                        <li><strong>SELECT * FROM</strong> workers;</li>
+                    </ul>
+            </li>
+            <li class="li">
+                    <ul>
+                        <p>Updating Data:</p>
+                        <li><strong>UPDATE</strong> workers; <br>
+                            <strong>SET</strong> position = 'Expert Software Engineer' <br>
+                            <strong>WHERE</strong> name = 'Joe Bide';</li>
+                    </ul>
+            </li>
+            <li class="li">
+                    <ul>
+                        <p>Deleting Data:</p>
+                        <li><strong>DELETE FROM</strong> workers; <br>
+                            <strong>WHERE</strong> name = 'Joe Bide';</li>
+                    </ul>
+            </li>
+            <p class="pos">User Management</p>
+            <li class="li">
+                    <ul>
+                        <p>Create a User:</p>
+                        <li><strong>CREATE USER</strong> 'username'@'host' IDENTIFIED BY 'password';</li>
+                    </ul>
+            </li>
+            <li class="li">
+                    <ul>
+                        <p>Grant Privileges:</p>
+                        <li><strong>GRANT ALL</strong> PRIVILEGES ON db_name.* TO 'username'@'host';</li>
+                    </ul>
+            </li>
+            <li class="li">
+                    <ul>
+                        <p>Revoke Privileges</p>
+                        <li><strong>REVOKE ALL</strong> PRIVILEGES ON db_name.* FROM 'username'@'host';</li>
+                    </ul>
+            </li>
+            <li class="li">
+                    <ul>
+                        <p>Drop a User</p>
+                        <li><strong>DROP USER</strong> 'username'@'host';</li>
+                    </ul>
+            </li>
+            <p class="pos">Database Administration</p>
+            <li class="li">
+                    <ul>
+                        <p>Show Databases</p>
+                        <li><strong>SHOW</strong> DATABASES;</li>
+                    </ul>
+            </li>
+            <li class="li">
+                    <ul>
+                        <p>Show Tables</p>
+                        <li><strong>SHOW</strong> TABLES;</li>
+                    </ul>
+            </li>
+            <li class="li">
+                    <ul>
+                        <p>Show Columns</p>
+                        <li><strong>SHOW</strong> COLUMNS <strong>FROM</strong> table_name;</li>
+                    </ul>
+            </li>
+            <li class="li">
+                    <ul>
+                        <p>Describe Table Structure</p>
+                        <li><strong>DESCRIBE</strong> table_name;</li>
+                    </ul>
+            </li>
+            <p class="pos">Indexing</p>
+            <li class="li">
+                    <ul>
+                        <p>Create an Index</p>
+                        <li><strong>CREATE</strong> INDEX index_name <br>
+                            <strong>ON</strong> table_name (column_name);</li>
+                    </ul>
+            </li>
+            <li class="li">
+                    <ul>
+                        <p>Drop an Index</p>
+                        <li><strong>DROP</strong> INDEX index_name <br>
+                            <strong>ON</strong> table_name;</li>
+                    </ul>
+            </li>
+            <p class="pos">Transactions</p>
+            <li class="li">
+                    <ul>
+                        <p>Start a Transaction</p>
+                        <li><strong>START</strong> TRANSACTION;</li>
+                    </ul>
+            </li>
+            <li class="li">
+                    <ul>
+                        <p>Commit a Transaction</p>
+                        <li><strong>COMMIT</strong>;</li>
+                    </ul>
+            </li>
+            <li class="li">
+                    <ul>
+                        <p>Rollback a Transaction</p>
+                        <li><strong>ROLLBACK</strong>;</li>
+                    </ul>
+            </li>
+            <p class="pos">Backup and Restore</p>
+            <li class="li">
+                    <ul>
+                        <p>Backup a Database (Using 'mysqldump' command-line tool)</p>
+                        <li><strong></strong>mysqldump -u username -p db_name > backup_file.sql</li>
+                        <p><strong>TIP:</strong> In order to run <strong>mysqldump</strong> , open your terminal, type <strong>mysqldump</strong> and you will see a list of <br>
+                           usage examples. The <strong>-u</strong> flag stands for user and <strong>-p</strong> for password. In our case the user is root <br>
+                           and after executing the command, you will be asked to type the password for that user.</p>
+                    </ul>
+            </li>
+            <li class="li">
+                    <ul>
+                        <p>Restore a Database</p>
+                        <li><strong></strong> mysql -u username -p db_name < backup_file.sql</li>
+                        <p><strong>TIP:</strong> In order to run <strong>mysqldump</strong> , open your terminal, type <strong>mysqldump</strong> and you will see a list of <br>
+                           usage examples. The <strong>-u</strong> flag stands for user and <strong>-p</strong> for password. In our case the user is root <br>
+                           and after executing the command, you will be asked to type the password for that user.</p>
+                    </ul>
+            </li>
+            <p class="pos">Joins and Relationships</p>
+            <li class="li">
+                    <ul>
+                        <p>Inner Join</p>
+                        <li><b>SELECT</b> columns <br>
+                            <b>FROM</b> table1 <br>
+                            <b>INNER JOIN</b> table2 ON table1.column = table2.column;</li>
+                    </ul>
+            </li>
+            <li class="li">
+                    <ul>
+                        <p>Left Join</p>
+                        <li><b>SELECT</b> columns <br>
+                            <b>FROM</b> table1 <br>
+                            <b>LEFT JOIN</b> table2 ON table1.column = table2.column;</li>
+                    </ul>
+            </li>
+            <li class="li">
+                    <ul>
+                        <p>Right Join</p>
+                        <li><b>SELECT</b> columns <br>
+                            <b>FROM</b> table1 <br>
+                            <b>RIGHT JOIN</b> table2 ON table1.column = table2.column;</li>
+                    </ul>
+            </li>
+            <li class="li">
+                    <ul>
+                        <p>Full Outer Join (Not natively supported in MySQL; <br> can be simulated with UNION)</p>
+                        <li><b>SELECT</b> columns <br>
+                            <b>FROM</b> table1 <br>
+                            <b>LEFT JOIN</b> table2 ON table1.column = table2.column <br>
+                            <b>UNION</b> <br>
+                            <b>SELECT</b> columns <br>
+                            <b>FROM</b> table1 <br>
+                            <b>RIGHT JOIN</b> table2 ON table1.column = table2.column;</li>
+                    </ul>
+            </li>
+            </ul>
+            <div>
+                <p class="p">If you're dealing with databases you can use <strong>mysql tutorials</strong> which are available in our tutorials website. Click the button: 
+                <a style="color: rgb(60, 255, 0);" href="video.html"><button type="button" style="border-radius: 10px 20px; background-image: linear-gradient(90deg, rgb(255, 0, 0), rgb(38, 0, 255) 30%, rgb(128, 0, 117) 95%); color: rgb(0, 255, 85);">Tutorials</button></a></p>
+            </div>
+            <div>
+                <p class="p">If you want the <strong>book of mysql</strong>, is available here and you can download it. Click the button: 
+                <a style="color: rgb(60, 255, 0);" href="book_s shelf KAT D/home.html"><button type="button" style="border-radius: 15px 5px 15px; background-image: linear-gradient(90deg, rgb(9, 255, 0), rgb(38, 0, 255) 30%, rgb(128, 0, 117) 95%); color: rgb(0, 255, 85);">BOOK OF MYSQL</button></a></p>
+        </div>
+        </div>
+
+    </div>
+</body>
+</html>
